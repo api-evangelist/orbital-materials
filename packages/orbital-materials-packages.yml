@@ -1,0 +1,82 @@
+generated: '2026-08-26'
+method: searched
+source: https://pypi.org/pypi/orb-models/json + https://api.github.com/orgs/orbital-materials/repos + https://huggingface.co/api/models?author=Orbital-Materials
+name: Orbital Materials — first-party packages
+note: >-
+  Orbital Materials publishes no HTTP API, so none of these are API client SDKs. They are
+  first-party open-source scientific software and model weights: `orb-models` is the
+  Apache-2.0 Python library that loads and runs the company's Orb / Orb-v2 / Orb-v3 /
+  OrbMol machine-learned interatomic potentials locally on CPU or GPU. Because there is no
+  API for a client library to wrap, no `SDKs` pointer is emitted for this artifact — doing
+  so would credit the company with an API-client surface it does not ship.
+registries_searched:
+- registry: pypi
+  result: hit (orb-models)
+- registry: npm
+  result: no first-party package (search for "orbital-materials" returned only unrelated
+    third-party packages)
+- registry: pkg.go.dev
+  result: not searched — no Go surface indicated anywhere in the provider's public material
+- registry: huggingface
+  result: hit (Orbital-Materials org, 2 public model repos)
+packages:
+- name: orb-models
+  registry: pypi
+  url: https://pypi.org/project/orb-models/
+  official: true
+  language: python
+  license: Apache-2.0
+  version: 0.7.0
+  published: '2026-05-26'
+  requires_python: '>=3.12'
+  description: Foundation models for computational chemistry — pretrained Orb / OrbMol
+    machine-learned interatomic potentials with an ASE calculator interface and a TorchSim
+    wrapper for batched simulation.
+  repository: https://github.com/orbital-materials/orb-models
+  install: pip install orb-models
+  recent_releases:
+  - version: 0.7.0
+    published: '2026-05-26'
+  - version: 0.6.2
+    published: '2026-03-18'
+  - version: 0.6.1
+    published: '2026-03-11'
+  - version: 0.6.0
+    published: '2026-03-04'
+  - version: 0.5.5
+    published: '2025-08-21'
+- name: orbital-materials/orb-models
+  registry: github
+  url: https://github.com/orbital-materials/orb-models
+  official: true
+  language: python
+  license: Apache-2.0
+  version: v0.7.0
+  published: '2026-05-26'
+  stars: 616
+  created: '2024-08-30'
+  last_pushed: '2026-08-07'
+  description: Source repository for the ORB forcefield models. Actively maintained —
+    pushed 2026-08-07, three months after the last tagged release.
+- name: Orbital-Materials/OrbMol
+  registry: huggingface
+  url: https://huggingface.co/Orbital-Materials/OrbMol
+  official: true
+  version: null
+  published: null
+  note: Model-weight repository. The Hugging Face model API returned no lastModified or
+    download count for this repo, so no version or date is recorded rather than guessed.
+- name: Orbital-Materials/orbmol-v2
+  registry: huggingface
+  url: https://huggingface.co/Orbital-Materials/orbmol-v2
+  official: true
+  version: null
+  published: null
+  note: OrbMol-v2 weights, announced May 2026 in the orb-models README. The Hugging Face
+    model API returned no lastModified or download count, so no version or date is recorded.
+currency:
+  latest_release: '2026-05-26'
+  latest_repo_activity: '2026-08-07'
+  assessment: >-
+    Current. The library shipped 4 releases in the 15 months to 2026-05-26 and the
+    repository was pushed 2026-08-07, so there is no abandonment signal.

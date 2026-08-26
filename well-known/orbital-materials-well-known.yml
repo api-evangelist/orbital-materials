@@ -1,0 +1,94 @@
+generated: '2026-08-26'
+method: probed
+source: direct HTTPS probe of each path on each host, 2026-08-26
+note: >-
+  Nothing is served. Every /.well-known/ path returned 404 on all three reachable hosts.
+  www.orbitalindustries.com and it.orbitalindustries.com are Next.js applications whose
+  404 page is an HTML shell served with content-type text/html, so even the 404 bodies are
+  markup rather than documents. No WellKnown or SecurityTxt pointer is emitted in apis.yml,
+  because this file records an absence and a pointer would assert a presence.
+  Two additional hosts resolve in DNS but never completed a TLS handshake within a 7s
+  ceiling and were abandoned rather than retried — see unreachable_hosts below.
+hosts:
+- host: www.orbitalindustries.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: orbitalindustries.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: it.orbitalindustries.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+unreachable_hosts:
+- host: platform.orbitalindustries.com
+  resolves: 54.151.43.57, 54.193.78.1
+  status: <no response>
+  reason: TLS connect timed out (curl exit 28) at a 7s ceiling; abandoned without retry.
+- host: curieos.orbitalindustries.com
+  resolves: 54.153.27.118, 54.193.144.127
+  status: <no response>
+  reason: TLS connect timed out (curl exit 28) at a 7s ceiling; abandoned without retry.
+- host: curie.orbitalmaterials.com
+  resolves: 54.193.144.127, 54.153.27.118
+  status: <no response>
+  reason: TLS connect timed out (curl exit 28) at a 7s ceiling; abandoned without retry.

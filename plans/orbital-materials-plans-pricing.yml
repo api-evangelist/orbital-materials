@@ -1,0 +1,13 @@
+generated: '2026-08-26'
+method: searched
+source: https://www.orbitalindustries.com/sitemap.xml + https://www.orbitalindustries.com/curieos
+name: Orbital Materials — plans and pricing
+plan_count: 0
+plans: []
+note: >-
+  No pricing or plans page exists. The full sitemap (fetched 2026-08-26, HTTP 200) lists
+  every public page on www.orbitalindustries.com and contains no /pricing, /plans or
+  /developers path. CurieOS, the company's platform product, ends with "Wondering what
+  CurieOS could do for your R&D?" and a contact form; the Orbital IT data-center module
+  business at it.orbitalindustries.com is likewise quote-based. There is no API, so there
+  is nothing metered to price.

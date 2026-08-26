@@ -1,0 +1,65 @@
+generated: '2026-08-26'
+method: searched
+source: https://github.com/orbital-materials/orb-models/releases + https://raw.githubusercontent.com/orbital-materials/orb-models/main/README.md
+name: Orbital Materials — orb-models release history
+scope: >-
+  This is the release log for the `orb-models` open-source Python library and its model
+  weights, NOT an API changelog. Orbital Materials publishes no HTTP API and therefore no
+  API changelog; this is the only dated, first-party, machine-readable record of what the
+  company ships and when.
+scheme: semver
+current_version: 0.7.0
+current_version_date: '2026-05-26'
+changelog_urls:
+- https://github.com/orbital-materials/orb-models/releases
+- https://github.com/orbital-materials/orb-models#updates
+entries:
+- version: v0.7.0
+  date: '2026-05-26'
+  breaking: true
+  highlights:
+  - Release of OrbMol-v2, adding a CoulombModule for long-range electrostatics on top of
+    the OrbMol architecture (direct Coulomb summation for non-periodic systems, Particle
+    Mesh Ewald via nvalchemiops for periodic systems); trained on OMol25 and OPoly26.
+  - GSCDB138 Normalized Error Ratio drops from 6.05 to 1.62.
+  - Full-model compilation — model.compile(...) now wraps the full regressor for all
+    models, ~1.7x speedup at 10k atoms on a single 80 GB GPU.
+  breaking_changes:
+  - model.predict(...)["energy"] now returns fp64 by default to preserve kJ/mol
+    resolution against OMol-scale references; pass fp64_energy=False to opt out.
+  source: https://github.com/orbital-materials/orb-models/releases/tag/v0.7.0
+- version: v0.6.2
+  date: '2026-03-18'
+  breaking: null
+  highlights: []
+  note: Release notes not captured beyond the tag and date.
+  source: https://github.com/orbital-materials/orb-models/releases/tag/v0.6.2
+- version: v0.6.1
+  date: '2026-03-11'
+  breaking: null
+  highlights: []
+  note: Release notes not captured beyond the tag and date.
+  source: https://github.com/orbital-materials/orb-models/releases/tag/v0.6.1
+- version: v0.6.0
+  date: '2026-03-04'
+  breaking: false
+  highlights:
+  - GPU-accelerated graph construction via NVIDIA ALCHEMI Toolkit-Ops (up to 12x faster
+    for large single systems; >100x for large batches of small systems).
+  - TorchSim wrapper for batched optimisation and simulation.
+  - Alchemi-based D3 dispersion correction module.
+  source: https://github.com/orbital-materials/orb-models/releases/tag/v0.6.0
+- version: v0.5.5
+  date: '2025-08-21'
+  breaking: false
+  highlights:
+  - Release of the OrbMol potentials, trained on Open Molecules 2025 (OMol25) — over 100M
+    high-accuracy DFT calculations; explicit total charge and spin multiplicity can now be
+    passed as input.
+  source: https://github.com/orbital-materials/orb-models/releases/tag/v0.5.5
+- version: 0.5.4
+  date: '2025-04-30'
+  breaking: null
+  highlights: []
+  note: Part of the April 2025 Orb-v3 release series (arXiv:2504.06231).
+  source: https://github.com/orbital-materials/orb-models/releases/tag/0.5.4

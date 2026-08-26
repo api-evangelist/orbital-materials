@@ -1,17 +1,37 @@
 aid: orbital-materials
 name: Orbital Materials
-description: 'Orbital Materials is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Orbital Materials (rebranded Orbital Industries in 2026) is an AI industrial
+  company founded in 2022 by Jonathan Godwin, a former DeepMind researcher, with offices
+  in London and San Francisco. It applies frontier AI to the discovery, testing and
+  deployment of advanced materials and to the hardware and manufacturing built around
+  them, co-designing materials and hardware together rather than sequentially. Its public
+  technical output is a family of open-source machine-learned interatomic potentials —
+  the Orb, Orb-v2/v3 and OrbMol foundation models for atomic simulation — distributed as
+  the Apache-2.0 licensed `orb-models` Python package on PyPI and GitHub and as model
+  weights on Hugging Face. Its internal platform, CurieOS, and its Orbital IT data-center
+  module business are marketed through a contact form rather than a developer program.
+  The company publishes no public HTTP API, developer portal, or machine-readable API
+  contract of any kind.'
+image: https://www.orbitalindustries.com/og-image-main.jpg
 url: https://raw.githubusercontent.com/api-evangelist/orbital-materials/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass-2026-08-26
 specificationVersion: '0.20'
 created: '2026-08-26'
 modified: '2026-08-26'
 tags:
 - Company
+- Artificial Intelligence
+- Machine Learning
+- Materials Science
+- Computational Chemistry
+- Scientific Computing
+- Climate Technology
+- Open Source Models
+- Data Centers
+- Manufacturing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +39,62 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/orbital-materials-domain-security.yml
 - type: Website
-  url: https://www.hiive.com/securities/orbital-materials-stock
+  url: https://www.orbitalindustries.com/
+- type: About
+  url: https://www.orbitalindustries.com/about
+- type: Blog
+  url: https://www.orbitalindustries.com/news
+- type: Support
+  url: https://www.orbitalindustries.com/contact
+- type: GitHubOrganization
+  url: https://github.com/orbital-materials
+- type: TermsOfService
+  url: https://www.orbitalindustries.com/legal/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.orbitalindustries.com/legal/privacy-policy
+- type: Packages
+  url: packages/orbital-materials-packages.yml
+- type: ChangeLog
+  url: changelog/orbital-materials-changelog.yml
+- type: LLMsTxt
+  url: llms/orbital-materials-llms.txt
+- type: Plans
+  url: plans/orbital-materials-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/orbital-materials-rate-limits.yml
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 7
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Orbital Materials (now Orbital Industries) ships its only public programmable surface as
+    a locally-run Apache-2.0 Python package, `orb-models` on PyPI, and its full sitemap
+    lists no /developers, /docs, /api or /pricing page — the CurieOS platform is offered
+    only through a "Wondering what CurieOS could do for your R&D?" contact form, and the
+    platform hosts that do exist in DNS never answer a TLS handshake from the public
+    internet.
+  evidence:
+  - url: https://www.orbitalindustries.com/sitemap.xml
+    status: 200
+  - url: https://www.orbitalindustries.com/openapi.json
+    status: 200
+  - url: https://www.orbitalindustries.com/llms.txt
+    status: 200
+  - url: https://www.orbitalindustries.com/docs
+    status: 404
+  - url: https://www.orbitalindustries.com/.well-known/agent-card.json
+    status: 404
+  - url: https://orbitalindustries.com/.well-known/agent.json
+    status: 404
+  - url: https://platform.orbitalindustries.com/
+    status: 0
+  - url: https://pypi.org/pypi/orb-models/json
+    status: 200
+  checked: '2026-08-26'

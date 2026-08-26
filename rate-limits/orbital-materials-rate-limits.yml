@@ -1,0 +1,12 @@
+generated: '2026-08-26'
+method: searched
+source: https://www.orbitalindustries.com/sitemap.xml + https://github.com/orbital-materials/orb-models
+name: Orbital Materials — rate limits
+limit_count: 0
+rate_limits: []
+note: >-
+  Not applicable and undocumented. Orbital Materials publishes no HTTP API, so there is no
+  request budget, no rate-limit response header, and no exhaustion status code to record.
+  The company's only public programmable surface is the `orb-models` Python package, which
+  runs model inference locally on the caller's own CPU or GPU and is therefore bounded by
+  hardware rather than by a provider quota.
