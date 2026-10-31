@@ -64,5 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Orbital Materials is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.hiive.com/securities/orbital-materials-stock
+Orbital Materials (rebranded Orbital Industries in 2026) is an AI industrial company founded in 2022 by Jonathan Godwin, a former DeepMind researcher, with offices in London and San Francisco. It applies frontier AI to the discovery, testing and deployment of advanced materials and to the hardware and manufacturing built around them, co-designing materials and hardware together rather than sequentially. Its public technical output is a family of open-source machine-learned interatomic potentials — the Orb, Orb-v2/v3 and OrbMol foundation models for atomic simulation — distributed as the Apache-2.0 licensed `orb-models` Python package on PyPI and GitHub and as model weights on Hugging Face. Its internal platform, CurieOS, and its Orbital IT data-center module business are marketed through a contact form rather than a developer program. The company publishes no public HTTP API, developer portal, or machine-readable API contract of any kind.
+
+**Areas:** Company · Artificial Intelligence · Machine Learning · Materials Science · Computational Chemistry · Scientific Computing · Climate Technology · Open Source Models · Data Center · Manufacturing
+
+## Orbital Materials on APIs.io
+
+Everything profiled for Orbital Materials is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/orbital-materials/](https://apis.io/providers/orbital-materials/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Orbital Materials Domain Security](https://apis.io/security/orbital-materials/orbital-materials-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Orbital Materials Plans Pricing](https://apis.io/plans/orbital-materials/orbital-materials-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Orbital Materials Rate Limits](https://apis.io/rate-limits/orbital-materials/orbital-materials-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.orbitalindustries.com/)
+- [Support](https://www.orbitalindustries.com/contact)
+- [Blog](https://www.orbitalindustries.com/news)
+- [Terms of service](https://www.orbitalindustries.com/legal/terms-and-conditions)
+- [Privacy policy](https://www.orbitalindustries.com/legal/privacy-policy)
+- [GitHub](https://github.com/orbital-materials)
+
+## API Evangelist rating
+
+**Kin Score 12.5** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 12.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/orbital-materials/](https://apis.io/providers/orbital-materials/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Orbital Materials: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/orbital-materials/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
